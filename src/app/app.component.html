@@ -7,12 +7,26 @@
     </ion-header>
     <ion-content>
       <ion-list>
-        <ion-item>Menu Item</ion-item>
-        <ion-item>Menu Item</ion-item>
-        <ion-item>Menu Item</ion-item>
+        <ion-menu-toggle>
+        <ion-item routerLink="home">Paseos
+          <ion-icon slot="start" name="chatbubbles-outline"></ion-icon>
+        </ion-item>
+      </ion-menu-toggle>
+    <ion-menu-toggle>
+        <ion-item routerLink="findpet">
+          Buscar mascota
+          <ion-icon slot="start" name="book-outline"></ion-icon>
+        </ion-item>
+      </ion-menu-toggle>
+    <ion-menu-toggle>
+        <ion-item routerLink="findwalk">
+          Buscar paseador
+          <ion-icon slot="start" name="baseball-outline"></ion-icon>
+        </ion-item>
+      </ion-menu-toggle>
       </ion-list>
     </ion-content>
   </ion-menu>
-  
-  <ion-router-outlet id="Menu"></ion-router-outlet>
+
+  <ion-router-outlet id="main"></ion-router-outlet>
 </ion-app>

@@ -11,6 +11,14 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'findpet',
+    loadChildren: () => import('./findpet/findpet.module').then( m => m.FindpetPageModule)
+  },
+  {
+    path: 'findwalk',
+    loadChildren: () => import('./findwalk/findwalk.module').then( m => m.FindwalkPageModule)
+  },
 ];
 
 @NgModule({
