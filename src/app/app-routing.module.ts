@@ -8,7 +8,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'login',
+    redirectTo: 'home',
     pathMatch: 'full'
   },
   {
@@ -19,14 +19,8 @@ const routes: Routes = [
     path: 'findwalk',
     loadChildren: () => import('./findwalk/findwalk.module').then( m => m.FindwalkPageModule)
   },
-  {
-    path: 'registro',
-    loadChildren: () => import('./auth/registro/registro.module').then( m => m.RegistroPageModule)
-  },
-  {
-    path: 'login',
-    loadChildren: () => import('./auth/login/login.module').then( m => m.LoginPageModule)
-  },
+  
+ 
 ];
 
 @NgModule({
