@@ -1,7 +1,7 @@
 .splash {
     position: absolute;
     width: 100%;
-    height: 90%;
+    height: 100%;
     z-index: 99%;
     display: flex;
     align-items: center;
@@ -9,8 +9,8 @@
     background: #ff7400;
   }
   .spinner {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 60px;
     background-color: #333;
   
     margin: 100px auto;
