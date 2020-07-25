@@ -1,43 +1,42 @@
-
-<div id="custom-overlay" [style.display]="splash ? 'flex': 'none'">
-  <div class="flv">
-    <div class="Aligner-items Aligner-item--top"></div>
-    <img src="assets/icon/logo.png">
-    <div class="Aligner-item Aligner-item--bottom"></div>
-  </div>
+<div id="custom-overlay" [style.display]="'splash' ? 'flex': 'none'">
+    <div class="flv">
+        <div class="Aligner-items Aligner-item--top"></div>
+        <img src="assets/icon/logo.png">
+        <div class="Aligner-item Aligner-item--bottom"></div>
+    </div>
 </div>
 <ion-header [translucent]="true">
-  <ion-toolbar color="primary">
-    <ion-buttons slot="start">
-<ion-menu-button name="Menu">
-</ion-menu-button>
-    </ion-buttons>
-    <ion-title>
-      Walking Care
-    </ion-title>
-  </ion-toolbar>
+    <ion-toolbar color="primary">
+        <ion-buttons slot="start">
+            <ion-menu-button name="Menu">
+            </ion-menu-button>
+        </ion-buttons>
+        <ion-title>
+            Walking Care
+        </ion-title>
+    </ion-toolbar>
 </ion-header>
 
 <ion-app>
-  <ion-header translucent>
-    <ion-toolbar>
-      <ion-title>Necesitan un paseo</ion-title>
-    </ion-toolbar>
-  </ion-header>
-  <ion-content fullscreen>
-    <ion-card>
-      <ion-item>
-        <ion-icon name="pin" slot="start"></ion-icon>
-        <ion-label>ve a pasear</ion-label>
-        <ion-button fill="outline" slot="end">Vista</ion-button>
-      </ion-item>
-      <ion-card-header>
-        <ion-card-subtitle>Pasa por tu perro</ion-card-subtitle>
-        <ion-card-title>deseas pasear a este perro</ion-card-title>
-      </ion-card-header>
-      <ion-card-content>
-       puedes pasar por el a las 5:00
-      </ion-card-content>
-    </ion-card>
-  </ion-content>
+    <ion-header translucent>
+        <ion-toolbar>
+            <ion-title>Necesitan un paseo</ion-title>
+        </ion-toolbar>
+    </ion-header>
+    <ion-content fullscreen>
+        <ion-card>
+            <ion-item>
+                <ion-icon name="pin" slot="start"></ion-icon>
+                <ion-label>ve a pasear</ion-label>
+                <ion-button fill="outline" slot="end">Vista</ion-button>
+            </ion-item>
+            <ion-card-header>
+                <ion-card-subtitle>Pasa por tu perro</ion-card-subtitle>
+                <ion-card-title>deseas pasear a este perro</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+                puedes pasar por el a las 5:00
+            </ion-card-content>
+        </ion-card>
+    </ion-content>
 </ion-app>
