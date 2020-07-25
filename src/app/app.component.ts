@@ -1,8 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, ElementRef } from '@angular/core';
 
 import { Platform } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
+
+import { timer } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -10,6 +12,10 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
   styleUrls: ['app.component.scss']
 })
 export class AppComponent {
+
+  showSplash = true;
+  @ViewChild('splash', {static: false})splash: ElementRef;
+
   constructor(
     private platform: Platform,
     private splashScreen: SplashScreen,
@@ -22,6 +28,8 @@ export class AppComponent {
     this.platform.ready().then(() => {
       this.statusBar.styleDefault();
       this.splashScreen.hide();
+
+      timer(3000).subscribe(() => this.showSplash = false)
     });
   }
 }
