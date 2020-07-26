@@ -26,7 +26,11 @@ const routes: Routes = [
   {
     path: 'register',
     loadChildren: () => import('./auth/register/register.module').then( m => m.RegisterPageModule)
+  },  {
+    path: 'miperfil',
+    loadChildren: () => import('./miperfil/miperfil.module').then( m => m.MiperfilPageModule)
   },
+
 
   
  
