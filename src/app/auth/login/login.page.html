@@ -1,0 +1,42 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-card class="card-center" style="width: 190px; height: 190px;" contextmenu="img">
+    <img src="../assets/Logo.png" height="180" width="180" alt="">
+    <ion-card-content style=" color: black; font-size: 7mm;">Login</ion-card-content>
+    </ion-card>
+    <ion-title  style=" color: black; font-size: 7mm; ">Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="content-login">
+  
+  <ion-list>
+    <ion-item>
+      <ion-label position="floating">Email</ion-label>
+      <ion-input placeholder="email" type="email" [(ngModel)]="email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Password</ion-label>
+      <ion-input placeholder="password" type="password" [(ngModel)]="password"></ion-input>
+    </ion-item>
+  </ion-list>
+  <p text-right>Olvidaste Tu contraseña?</p>
+    <ion-button expand="full"(click)="gologin()">Login</ion-button>
+  
+  <p text-center>No tienes una cuenta?</p>
+  <ion-button routerLink="/register" expand="full" color='light'>Registrarse</ion-button>
+
+  <ion-button expand="full" color='danger'>
+    <ion-icon name="logo-google">
+      <img src="../assets/logogoogle.jpg">
+    </ion-icon>
+  </ion-button>
+
+  <ion-button expand="full">
+    <ion-icon name="logo-facebook">
+      <img src="../assets/logofacebook.png">
+    </ion-icon>
+  </ion-button>
+
+
+</ion-content>

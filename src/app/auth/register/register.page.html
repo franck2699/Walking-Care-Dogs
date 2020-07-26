@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Register</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-list>
+    <ion-item>
+        <ion-label position="floating">Nombres</ion-label>
+        <ion-input placeholder="Nombres" name="fName"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label position="floating">Apellidos</ion-label>
+      <ion-input placeholder="Apellidos" name="lName"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label position="floating">Email</ion-label>
+      <ion-input  placeholder="Primer nombre" type="email" name="email"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label position="floating">Password</ion-label>
+      <ion-input placeholder="Primer nombre" type="password" name="password"></ion-input>
+    </ion-item>
+  
+    <ion-button routerLink="/home" type="submit" expand="full" color="danger">Register</ion-button>
+  </ion-list>
+
+  <p text-center>Already have a account?</p>
+  <ion-button routerLink="/login" expand="full" color="primary" >Login</ion-button>
+  
+  <ion-button expand="full">
+    <ion-icon name="logo-google"></ion-icon>
+  </ion-button>
+
+  <ion-button expand="full">
+    <ion-icon name="logo-facebook"></ion-icon>
+  </ion-button>
+
+</ion-content>  
