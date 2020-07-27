@@ -1,44 +1,74 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>Registrar</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content>
+    <ion-grid class="grid1">
 
-<ion-content padding>
+        <ion-row class="row1">
+            <ion-col>
 
-  <ion-list>
-    <ion-item>
-        <ion-label position="floating">Nombres</ion-label>
-        <ion-input placeholder="Nombres" name="fName"></ion-input>
-    </ion-item>
-  
-    <ion-item>
-      <ion-label position="floating">Apellidos</ion-label>
-      <ion-input placeholder="Apellidos" name="lName"></ion-input>
-    </ion-item>
-  
-    <ion-item>
-      <ion-label position="floating">Email</ion-label>
-      <ion-input  placeholder="Primer nombre" type="email" name="email"></ion-input>
-    </ion-item>
-  
-    <ion-item>
-      <ion-label position="floating">Password</ion-label>
-      <ion-input placeholder="Primer nombre" type="password" name="password"></ion-input>
-    </ion-item>
-  
-    <ion-button routerLink="/home" type="submit" expand="full" color="danger">Register</ion-button>
-  </ion-list>
+            </ion-col>
+        </ion-row>
 
-  <p text-center>Already have a account?</p>
-  <ion-button routerLink="/login" expand="full" color="primary" >Login</ion-button>
+        <ion-row class="row2">
+            <ion-col>
 
-  <ion-button expand="full">
-    <ion-icon name="logo-google"></ion-icon>
-  </ion-button>
+            </ion-col>
+        </ion-row>
 
-  <ion-button expand="full">
-    <ion-icon name="logo-facebook"></ion-icon>
-  </ion-button>
+    </ion-grid>
+    <ion-slide>
+        <div class="contaier-register">
+            <ion-grid>
+                <ion-row>
+                    <ion-col>
+                        <h1 class="h1">Registro</h1>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col>
+                        <ion-list>
+                            <ion-item>
+                                <ion-label position="floating" class="font-weight-bold">Nombres</ion-label>
+                                <ion-input placeholder="Ingrese Nombres" name="fName"></ion-input>
+                            </ion-item>
 
-</ion-content>  
+                            <ion-item>
+                                <ion-label position="floating">Apellidos</ion-label>
+                                <ion-input placeholder="Ingrese Apellidos" name="lName"></ion-input>
+                            </ion-item>
+
+                            <ion-item>
+                                <ion-label position="floating">Email</ion-label>
+                                <ion-input placeholder="Ingrese Email" type="email" name="email"></ion-input>
+                            </ion-item>
+
+                            <ion-item>
+                                <ion-label position="floating">Contraseña</ion-label>
+                                <ion-input placeholder="Ingrese Contraseña" type="password" name="password"></ion-input>
+                            </ion-item>
+
+                            <ion-button routerLink="/home" type="submit" expand="full" color="success">Registrar </ion-button>
+                            <ion-button color="danger">
+                                <ion-icon name="logo-google"></ion-icon>
+                            </ion-button>
+
+                            <ion-button>
+                                <ion-icon name="logo-facebook"></ion-icon>
+                            </ion-button>
+                        </ion-list>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col>
+                        <p text-center>¿Ya tienes una cuenta?</p>
+                        <ion-button routerLink="/login" expand="full" color="primary">Iniciar Session</ion-button>
+
+
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+        </div>
+    </ion-slide>
+
+
+
+
+</ion-content>

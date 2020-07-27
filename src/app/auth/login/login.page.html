@@ -19,8 +19,8 @@
             <ion-grid>
                 <ion-row>
                     <ion-col>
-                        <img src="../assets/Logo.png" height="180" width="180" alt="">
-                        <h1>Iniciar Session</h1>
+                        <img src="../assets/Logo.png" height="180" width="180" class="img-fluid" alt="Responsive image">
+                        <h1 class="h1">Iniciar Session</h1>
                     </ion-col>
                 </ion-row>
                 <ion-row>
@@ -40,11 +40,11 @@
                 <ion-row>
                     <ion-col>
                         <ion-button type="submit" fill="solid" expand="full" (click)="gologin()">Login</ion-button>
-                        <p text-right>Olvidaste Tu contraseña?</p>
+
                     </ion-col>
                 </ion-row>
             </ion-grid>
-            <p text-center>No tienes una cuenta?</p>
+            <p text-center>¿No tienes una cuenta?</p>
             <ion-button routerLink="/register" color="warning">Registrarse</ion-button>
 
             <ion-button color="danger">
@@ -58,8 +58,16 @@
                     <img src="../assets/logofacebook.png">
                 </ion-icon>
             </ion-button>
+            <ion-row>
+                <ion-col>
+                    <ion-label>
+                        <h3>¿Olvido la contraseña?</h3>
+                    </ion-label>
+                </ion-col>
+            </ion-row>
         </div>
     </ion-slide>
+
 
 
 </ion-content>
