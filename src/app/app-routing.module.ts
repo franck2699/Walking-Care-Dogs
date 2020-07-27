@@ -30,6 +30,30 @@ const routes: Routes = [
     path: 'miperfil',
     loadChildren: () => import('./miperfil/miperfil.module').then( m => m.MiperfilPageModule)
   },
+  {
+    path: 'take',
+    loadChildren: () => import('./pages/take/take.module').then( m => m.TakePageModule)
+  },
+  {
+    path: 'training',
+    loadChildren: () => import('./pages/training/training.module').then( m => m.TrainingPageModule)
+  },
+  {
+    path: 'healthy',
+    loadChildren: () => import('./pages/healthy/healthy.module').then( m => m.HealthyPageModule)
+  },
+  {
+    path: 'rescue',
+    loadChildren: () => import('./pages/rescue/rescue.module').then( m => m.RescuePageModule)
+  },
+  {
+    path: 'beautie',
+    loadChildren: () => import('./pages/beautie/beautie.module').then( m => m.BeautiePageModule)
+  },
+  {
+    path: 'trabajo',
+    loadChildren: () => import('./pages/trabajo/trabajo.module').then( m => m.TrabajoPageModule)
+  },
 
 
   
