@@ -1,9 +1,192 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>detalles</ion-title>
-  </ion-toolbar>
-</ion-header>
+<link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800&display=swap" rel="stylesheet">
 
-<ion-content>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List</title>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core@next/dist/ionic/ionic.esm.js"></script>
+  <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core@next/dist/ionic/ionic.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core@next/css/ionic.bundle.css"/>
+  <style>
+    :root {
+      --ion-safe-area-top: 20px;
+      --ion-safe-area-bottom: 22px;
+    }
+  </style>
+      <ion-header>
+        <ion-toolbar color="primary" style=" color: white;">
+          <ion-buttons slot="start">
+            <ion-menu-button name="Menu">
+            </ion-menu-button>
+                </ion-buttons>
+                <ion-title>
+                  Información del Trabajador
+                </ion-title>
+              </ion-toolbar>
+            </ion-header>
+                
+            <ion-app>
+              <ion-header translucent>
+                <ion-toolbar>
+                  <ion-title>Pensada para los amantes de las mascotas</ion-title>
+                  
+                </ion-toolbar>
+              </ion-header>
+              <ion-content fullscreen>
 
-</ion-content>
+    <section class="ftco-section bg-light ftco-faqs">
+    	<div class="container">
+    		<div class="row">
+    				<div class="img img-video d-flex align-self-stretch align-items-center justify-content-center justify-content-md-center mb-4 mb-sm-0" style="background-image:url(assets/about.jpg);">
+            </div>
+    				
+
+    			<div class="col-lg-6">
+    				<div class="heading-section mb-5 mt-5 mt-lg-0">
+	            <h2 class="mb-3">Natalia Cervantes Navarro</h2>
+              <p>Tula de Allende Hidalgo Mexico. Colonia La Ermita</p>
+              <p>Me encanta Jugar con los perros y hacer deporte con ellos. Garantizo exelentes cuidados.</p>
+            </div>
+            <ion-button expand="full" shape="round" routerLink="/pago" class="d-flex py-20 px-10" style="text-align: center; color: white;">Contratar</ion-button>
+
+            <br><br>
+						<div id="accordion" class="myaccordion w-100" aria-multiselectable="true">
+							<div class="card">
+							  <div class="card-header p-0" id="headingOne">
+								<h2 class="mb-0">
+								  <div class="heading-section mb-5 mt-5 mt-lg-0">
+                    <h2 class="mb-3">Comentarios</h2>
+                  </div>
+								</h2>
+							  </div>
+                  <ion-list>
+                    <ion-list-header>
+                      Recent Conversations
+                    </ion-list-header>
+            
+                    <ion-item>
+                      <ion-avatar slot="start">
+                        <img src="./avatar-finn.png">
+                      </ion-avatar>
+                      <ion-label>
+                        <h2>Finn</h2>
+                        <h3>I'm a big deal</h3>
+                        <p>Listen, I've had a pretty messed up day...</p>
+                      </ion-label>
+                    </ion-item>
+            
+                    <ion-item>
+                      <ion-avatar slot="start">
+                        <img src="./avatar-han.png">
+                      </ion-avatar>
+                      <ion-label>
+                        <h2>Han</h2>
+                        <h3>Look, kid...</h3>
+                        <p>I've got enough on my plate as it is, and I...</p>
+                      </ion-label>
+                    </ion-item>
+            
+                    <ion-item>
+                      <ion-avatar slot="start">
+                        <img src="./avatar-rey.png">
+                      </ion-avatar>
+                      <ion-label>
+                        <h2>Rey</h2>
+                        <h3>I can handle myself</h3>
+                        <p>You will remove these restraints and leave...</p>
+                      </ion-label>
+                    </ion-item>
+            
+                    <ion-item>
+                      <ion-avatar slot="start">
+                        <img src="./avatar-luke.png">
+                      </ion-avatar>
+                      <ion-label>
+                        <h2>Luke</h2>
+                        <h3>Your thoughts betray you</h3>
+                        <p>I feel the good in you, the conflict...</p>
+                      </ion-label>
+                    </ion-item>
+                  </ion-list>
+            
+                  <ion-list>
+                    <ion-list-header>
+                      Online
+                    </ion-list-header>
+            
+                    <ion-item>
+                      <ion-avatar slot="start">
+                        <img src="./avatar-poe.png">
+                      </ion-avatar>
+                      <ion-label>
+                        <h2>Poe</h2>
+                        <h3>New Ride</h3>
+                        <p>I just upgraded my X-Wing. Next time...</p>
+                      </ion-label>
+                    </ion-item>
+            
+                    <ion-item>
+                      <ion-avatar slot="start">
+                        <img src="./avatar-ben.png">
+                      </ion-avatar>
+                      <ion-label>
+                        <h2>Ben</h2>
+                        <h3>Move Along</h3>
+                        <p>These aren't the droids you're looking for...</p>
+                      </ion-label>
+                    </ion-item>
+            
+                    <ion-item>
+                      <ion-avatar slot="start">
+                        <img src="./avatar-leia.png">
+                      </ion-avatar>
+                      <ion-label>
+                        <h2>Leia</h2>
+                        <h3>You're My Only Hope</h3>
+                        <p>I've placed information vital to the survival...</p>
+                      </ion-label>
+                    </ion-item>
+            
+                  </ion-list>
+                  <h2 class="mb-0">
+                    <div class="heading-section mb-5 mt-5 mt-lg-0">
+                      <h2 class="mb-3">Deja un comentario</h2>
+                    </div>
+                  </h2>
+                  <div class="card-body py-3 px-0">
+						      	<ion-textarea></ion-textarea>
+						      </div>
+                  <ion-button expand="full" shape="round" routerLink="/pago" class="d-flex py-20 px-10" style="text-align: center; color: white;">Comentar</ion-button>
+							</div>
+						  </div>
+	        </div>
+        </div>
+    	</div>
+    </section>
+
+    <footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+						<h2 class="footer-heading">Contactate con Nosotros</h2>
+						<div class="block-23 mb-3">
+              <ul>
+                <li><span class="icon fa fa-map"></span><span class="text">Tula de Allende Hidalgo México</span></li>
+                <li><a href="#"><span class="icon fa fa-phone"></span><span class="text">+52 773 392 1210</span></a></li>
+                <li><a href="#"><span class="icon fa fa-paper-plane"></span><span class="text">admin@walkingcare.com</span></a></li>
+              </ul>
+            </div>
+					</div>
+				</div>
+				<div class="row mt-5">
+          <div class="col-md-12 text-center">
+
+            <p class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved
+  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+          </div>
+        </div>
+			</div>
+		</footer>
+              </ion-content>
+            </ion-app>
