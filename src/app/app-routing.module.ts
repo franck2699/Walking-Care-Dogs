@@ -54,6 +54,22 @@ const routes: Routes = [
     path: 'trabajo',
     loadChildren: () => import('./pages/trabajo/trabajo.module').then( m => m.TrabajoPageModule)
   },
+  {
+    path: 'detalles',
+    loadChildren: () => import('./pages/detalles/detalles.module').then( m => m.DetallesPageModule)
+  },
+  {
+    path: 'encuentro',
+    loadChildren: () => import('./pages/encuentro/encuentro.module').then( m => m.EncuentroPageModule)
+  },
+  {
+    path: 'pago',
+    loadChildren: () => import('./pages/pago/pago.module').then( m => m.PagoPageModule)
+  },
+  {
+    path: 'ticket',
+    loadChildren: () => import('./pages/ticket/ticket.module').then( m => m.TicketPageModule)
+  },
 
 
   
