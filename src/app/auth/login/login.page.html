@@ -1,42 +1,65 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-card class="card-center" style="width: 190px; height: 190px;" contextmenu="img">
-    <img src="../assets/Logo.png" height="180" width="180" alt="">
-    <ion-card-content style=" color: black; font-size: 7mm;">Login</ion-card-content>
-    </ion-card>
-    <ion-title  style=" color: black; font-size: 7mm; ">Login</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content>
+    <ion-grid class="grid1">
 
-<ion-content class="content-login">
-  
-  <ion-list>
-    <ion-item>
-      <ion-label position="floating">Email</ion-label>
-      <ion-input placeholder="email" type="email" [(ngModel)]="email"></ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-label position="floating">Password</ion-label>
-      <ion-input placeholder="password" type="password" [(ngModel)]="password"></ion-input>
-    </ion-item>
-  </ion-list>
-  <p text-right>Olvidaste Tu contraseña?</p>
-    <ion-button expand="full"(click)="gologin()">Login</ion-button>
-  
-  <p text-center>No tienes una cuenta?</p>
-  <ion-button routerLink="/register" expand="full" color='light'>Registrarse</ion-button>
+        <ion-row class="row1">
+            <ion-col>
 
-  <ion-button expand="full" color='danger'>
-    <ion-icon name="logo-google">
-      <img src="../assets/logogoogle.jpg">
-    </ion-icon>
-  </ion-button>
+            </ion-col>
+        </ion-row>
 
-  <ion-button expand="full">
-    <ion-icon name="logo-facebook">
-      <img src="../assets/logofacebook.png">
-    </ion-icon>
-  </ion-button>
+        <ion-row class="row2">
+            <ion-col>
+
+            </ion-col>
+        </ion-row>
+
+    </ion-grid>
+    <ion-slide>
+        <div class="contaier-login">
+            <ion-grid>
+                <ion-row>
+                    <ion-col>
+                        <img src="../assets/Logo.png" height="180" width="180" alt="">
+                        <h1>Iniciar Session</h1>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col>
+                        <ion-list>
+                            <ion-item>
+                                <ion-icon name="person-circle-outline"></ion-icon>
+                                <ion-input placeholder="Email" type="email" [(ngModel)]="email"></ion-input>
+                            </ion-item>
+                            <ion-item>
+                                <ion-icon name="key-outline"></ion-icon>
+                                <ion-input placeholder="Password" type="password" [(ngModel)]="password"></ion-input>
+                            </ion-item>
+                        </ion-list>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col>
+                        <ion-button type="submit" fill="solid" expand="full" (click)="gologin()">Login</ion-button>
+                        <p text-right>Olvidaste Tu contraseña?</p>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+            <p text-center>No tienes una cuenta?</p>
+            <ion-button routerLink="/register" color="warning">Registrarse</ion-button>
+
+            <ion-button color="danger">
+                <ion-icon name="logo-google">
+                    <img src="../assets/logogoogle.jpg">
+                </ion-icon>
+            </ion-button>
+
+            <ion-button color="primary">
+                <ion-icon name="logo-facebook">
+                    <img src="../assets/logofacebook.png">
+                </ion-icon>
+            </ion-button>
+        </div>
+    </ion-slide>
 
 
 </ion-content>
