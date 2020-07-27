@@ -12,4 +12,7 @@ export class MiperfilPage implements OnInit {
   ngOnInit() {
   }
 
+  public abrirModal(){
+
+  }
 }
