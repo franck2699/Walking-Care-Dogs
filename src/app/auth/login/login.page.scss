@@ -40,3 +40,8 @@ ion-slide {
     position: absolute !important;
     top: 0px !important;
 }
+
+//Animacion
+.animate__bounce {
+    --animate-duration: 2s;
+}
