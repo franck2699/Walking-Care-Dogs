@@ -41,14 +41,13 @@
     				<div class="heading-section pt-md-5">
 	            <h2 class="mb-4">Por Favor Llene los siguientes campos</h2>
     				</div>
-    				<div class="row">
                 <ion-list lines="full" class="ion-no-margin ion-no-padding">
                   <ion-item>
                     <ion-label>Fecha de Reunion</ion-label>
                     <ion-datetime value="2020-07-30" min="1990-02" max="2050"
                       [dayShortNames]="customDayShortNames"
                       displayFormat="DDD. MMM DD, YY"
-                      monthShortNames="jan, feb, mar, apr, mai, jun, jul, aug, sep, okt, nov, des"></ion-datetime>
+                      monthShortNames="Ene, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dic"></ion-datetime>
                   </ion-item>
         
                   <ion-item>
@@ -63,9 +62,6 @@
 <br><br>
                    <ion-button expand="block" class="ion-no-margin" routerLink="/pago">Siguiente</ion-button>
                 </ion-list>
-        
-                 
-	    			</div>
 	        </div>
         </div>
     	</div>
