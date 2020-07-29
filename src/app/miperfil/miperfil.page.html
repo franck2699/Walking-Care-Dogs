@@ -3,39 +3,68 @@
         <ion-title class="text-capitalize">Perfil</ion-title>
     </ion-toolbar>
 </ion-header>
-
 <ion-content padding>
+    <ion-grid class="grid1">
 
-    <ion-list>
-        <ion-card>
-            <img src="../assets/Logo.png" height="180" width="180" alt="">
-            <ion-card-content style=" color: black; font-size: 7mm;">
-                <ion-button (click)="abrirModal()">
-                    <ion-icon slot="start" name="add"></ion-icon>Actualizar
-                </ion-button>
-            </ion-card-content>
-        </ion-card>
-        <ion-item>
-            <ion-label>Nombres</ion-label>
-            <ion-label>Jonathan Alejandro</ion-label>
-        </ion-item>
+        <ion-row class="row1">
+            <ion-col>
 
-        <ion-item>
-            <ion-label>Apellidos</ion-label>
-            <ion-label>Perez Hernandez</ion-label>
-        </ion-item>
+            </ion-col>
+        </ion-row>
 
-        <ion-item>
-            <ion-label>Email</ion-label>
-            <ion-label>JAPH2699@gmail.com</ion-label>
-        </ion-item>
+        <ion-row class="row2">
+            <ion-col>
 
-        <ion-item>
-            <ion-label>Password</ion-label>
-            <ion-label>*************</ion-label>
-        </ion-item>
+            </ion-col>
+        </ion-row>
 
-        <ion-button routerLink="/home" type="submit" expand="full" color="danger">Register</ion-button>
-    </ion-list>
+    </ion-grid>
+    <ion-slide>
+        <div class="contaier-register">
+            <ion-grid>
+                <ion-row>
+                    <ion-col>
+                        <ion-card>
+                            <ion-card-content>
+                                <ion-card-header>
+                                    <img src="../assets/perfil1.jpg" height="180" width="180" alt="">
+                                    <ion-button (click)="abrirModal()">
+                                        <ion-icon slot="start" name="add"></ion-icon>Actualizar
+                                    </ion-button>
+                                </ion-card-header>
+                            </ion-card-content>
+                        </ion-card>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
 
+            <ion-grid>
+                <ion-row>
+                    <ion-col>
+                        <ion-item>
+                            <ion-label>Nombres</ion-label>
+                            <ion-label>Jonathan Alejandro</ion-label>
+                        </ion-item>
+
+                        <ion-item>
+                            <ion-label>Apellidos</ion-label>
+                            <ion-label>Perez Hernandez</ion-label>
+                        </ion-item>
+
+                        <ion-item>
+                            <ion-label>Email</ion-label>
+                            <ion-label>JAPH2699@gmail.com</ion-label>
+                        </ion-item>
+
+                        <ion-item>
+                            <ion-label>Password</ion-label>
+                            <ion-label>*************</ion-label>
+                        </ion-item>
+
+                        <ion-button routerLink="/home" type="submit" class="button-full  border-bottom" color="danger">Register</ion-button>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+        </div>
+    </ion-slide>
 </ion-content>

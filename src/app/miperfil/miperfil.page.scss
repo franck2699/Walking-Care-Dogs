@@ -1,0 +1,42 @@
+.grid1 {
+    height: 100%;
+    padding: 0px;
+}
+
+.contaier-register {
+    width: 90%;
+    padding: 10px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    -webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.75);
+}
+
+.row1 {
+    height: 50%;
+    background: -moz-linear-gradient(45deg, rgb(54, 61, 196) 0%, rgba(82, 74, 171, 0.8) 100%);
+    background: -webkit-linear-gradient(45deg, rgb(65, 73, 209) 0%, rgba(45, 33, 151, 0.575) 100%);
+    background: linear-gradient(45deg, rgb(72, 80, 233) 0%, rgba(156, 150, 214, 0.8) 100%);
+}
+
+.row2 {
+    height: 50%;
+}
+
+ion-icon {
+    margin-right: 15px;
+}
+
+ion-button {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 15px !important;
+}
+
+ion-slide {
+    width: 100%;
+    height: 100%;
+    position: absolute !important;
+    top: 0px !important;
+}
