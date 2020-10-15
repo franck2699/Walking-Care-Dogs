@@ -1,89 +1,90 @@
 <div *ngIf="showSplash" class="splash">
     <div class="spinner"></div>
-  </div>
+</div>
 <ion-app>
-  <ion-menu side="start" menuId="Menu" colo contentId="main">
-    <ion-header>
-      <ion-toolbar color="primary">
-        <ion-title routerLink="home">Walking Care</ion-title>
-      </ion-toolbar>
-    </ion-header>
-    <ion-content>
-      <ion-list>
-        <ion-menu-toggle>
-        <ion-item routerLink="miperfil">Ver Mi Perfil
-          <ion-thumbnail slot="start">
-            <ion-img src="assets/usuario.png" routerLink="miperfil"></ion-img>
-          </ion-thumbnail>
-        </ion-item>
-      </ion-menu-toggle>
-      <ion-menu-toggle>
-        <ion-item routerLink="/take">
-          Take Care Dogs
-          <ion-thumbnail slot="start">
-            <ion-img src="assets/alimento.png" routerLink="/take"></ion-img>
-          </ion-thumbnail>
-        </ion-item>
-      </ion-menu-toggle>
-    <ion-menu-toggle>
-        <ion-item routerLink="findpet">
-          Walking Care Dogs
-          <ion-thumbnail slot="start">
-            <ion-img src="assets/paseo.png" routerLink="findpet"></ion-img>
-          </ion-thumbnail>
-        </ion-item>
-      </ion-menu-toggle>
-    <ion-menu-toggle>
-        <ion-item routerLink="/training">
-          Training Care Dogs
-          <ion-thumbnail slot="start">
-            <ion-img src="assets/entrenamiento.png" routerLink="/trainining"></ion-img>
-          </ion-thumbnail>
-        </ion-item>
-      </ion-menu-toggle>
-      <ion-menu-toggle>
-        <ion-item routerLink="/healthy">
-          Healthy Care Dogs
-          <ion-thumbnail slot="start">
-            <ion-img src="assets/pata.png" routerLink="/healthy"></ion-img>
-          </ion-thumbnail>
-        </ion-item>
-      </ion-menu-toggle>
-      <ion-menu-toggle>
-        <ion-item routerLink="findwalk">
-          Rescue Care Dogs
-          <ion-thumbnail slot="start" routerLink="/rescue">
-            <ion-img src="assets/cuidados.png" routerLink="/rescue"></ion-img>
-          </ion-thumbnail>
-        </ion-item>
-      </ion-menu-toggle>
-      <ion-menu-toggle>
-        <ion-item routerLink="/beautie">
-          Beauti Care Dogs
-          <ion-thumbnail slot="start">
-            <ion-img src="assets/perro.png" routerLink="/beautie"></ion-img>
-          </ion-thumbnail>
-        </ion-item>
-      </ion-menu-toggle>
-      <ion-menu-toggle>
-        <ion-item routerLink="/trabajo">
-          Unete a Nuestro Equipo
-          <ion-thumbnail slot="start">
-            <ion-img src="assets/grupo.png" routerLink="/trabajo"></ion-img>
-          </ion-thumbnail>
-        </ion-item>
-      </ion-menu-toggle>
-      <ion-menu-toggle>
-        <ion-item routerLink="login">
-          Cerrar Session
-          <ion-thumbnail slot="start">
-            <ion-img src="assets/offsession.png"></ion-img>
-          </ion-thumbnail>
-        </ion-item>
-      </ion-menu-toggle>
-      </ion-list>
-    </ion-content>
-  </ion-menu>
+    <ion-menu side="start" menuId="Menu" colo contentId="main">
+        <ion-header>
+            <ion-toolbar color="primary">
+                <ion-title routerLink="home">Walking Care</ion-title>
+            </ion-toolbar>
+        </ion-header>
+        <ion-content>
+            <ion-list>
+                <ion-menu-toggle>
+                    <ion-item routerLink="miperfil">Ver Mi Perfil
+                        <ion-thumbnail slot="start">
+                            <ion-img src="assets/usuario.png" routerLink="miperfil"></ion-img>
+                        </ion-thumbnail>
+                    </ion-item>
+                </ion-menu-toggle>
+                <ion-menu-toggle>
+                    <ion-item routerLink="/take">
+                        Take Care Dogs
+                        <ion-thumbnail slot="start">
+                            <ion-img src="assets/alimento.png" routerLink="/take"></ion-img>
+                        </ion-thumbnail>
+                    </ion-item>
+                </ion-menu-toggle>
+                <ion-menu-toggle>
+                    <ion-item routerLink="/menu-tabs">
+                        Walking Care Dogs QR
+                        <ion-thumbnail slot="start">
+                            <ion-img src="assets/paseo.png" routerLink="/menu-tabs"></ion-img>
+                        </ion-thumbnail>
+                    </ion-item>
+                </ion-menu-toggle>
+                <ion-menu-toggle>
+                    <ion-item routerLink="/training">
+                        Training Care Dogs
+                        <ion-thumbnail slot="start">
+                            <ion-img src="assets/entrenamiento.png" routerLink="/trainining"></ion-img>
+                        </ion-thumbnail>
+                    </ion-item>
+                </ion-menu-toggle>
+                <ion-menu-toggle>
+                    <ion-item routerLink="/healthy">
+                        Healthy Care Dogs
+                        <ion-thumbnail slot="start">
+                            <ion-img src="assets/pata.png" routerLink="/healthy"></ion-img>
+                        </ion-thumbnail>
+                    </ion-item>
+                </ion-menu-toggle>
+                <ion-menu-toggle>
+                    <ion-item routerLink="findwalk">
+                        Rescue Care Dogs
+                        <ion-thumbnail slot="start" routerLink="/rescue">
+                            <ion-img src="assets/cuidados.png" routerLink="/rescue"></ion-img>
+                        </ion-thumbnail>
+                    </ion-item>
+                </ion-menu-toggle>
+                <ion-menu-toggle>
+                    <ion-item routerLink="/beautie">
+                        Beauti Care Dogs
+                        <ion-thumbnail slot="start">
+                            <ion-img src="assets/perro.png" routerLink="/beautie"></ion-img>
+                        </ion-thumbnail>
+                    </ion-item>
+                </ion-menu-toggle>
+                <ion-menu-toggle>
+                    <ion-item routerLink="/trabajo">
+                        Unete a Nuestro Equipo
+                        <ion-thumbnail slot="start">
+                            <ion-img src="assets/grupo.png" routerLink="/trabajo"></ion-img>
+                        </ion-thumbnail>
+                    </ion-item>
+                </ion-menu-toggle>
 
-  <ion-router-outlet id="main"></ion-router-outlet>
+                <ion-menu-toggle>
+                    <ion-item routerLink="login">
+                        Cerrar Session
+                        <ion-thumbnail slot="start">
+                            <ion-img src="assets/offsession.png"></ion-img>
+                        </ion-thumbnail>
+                    </ion-item>
+                </ion-menu-toggle>
+            </ion-list>
+        </ion-content>
+    </ion-menu>
+
+    <ion-router-outlet id="main"></ion-router-outlet>
 </ion-app>

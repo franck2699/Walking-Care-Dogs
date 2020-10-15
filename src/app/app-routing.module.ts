@@ -26,7 +26,8 @@ const routes: Routes = [
   {
     path: 'register',
     loadChildren: () => import('./auth/register/register.module').then( m => m.RegisterPageModule)
-  },  {
+  },
+  {
     path: 'miperfil',
     loadChildren: () => import('./miperfil/miperfil.module').then( m => m.MiperfilPageModule)
   },
@@ -70,10 +71,18 @@ const routes: Routes = [
     path: 'ticket',
     loadChildren: () => import('./pages/ticket/ticket.module').then( m => m.TicketPageModule)
   },
-
-
-  
- 
+  {
+    path: 'menu-tabs',
+    loadChildren: () => import('./pages/menu-tabs/menu-tabs.module').then( m => m.MenuTabsPageModule)
+  },
+  {
+    path: 'tab1',
+    loadChildren: () => import('./pages/tab1/tab1.module').then( m => m.Tab1PageModule)
+  },
+  {
+    path: 'tab2',
+    loadChildren: () => import('./pages/tab2/tab2.module').then( m => m.Tab2PageModule)
+  }
 ];
 
 @NgModule({
