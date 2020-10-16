@@ -11,7 +11,6 @@ export class Tab2Page implements OnInit {
 
   ngOnInit() {
   }
-  
   ionViewDidEnter(){
     console.log('ViewDidEnter');
   }
