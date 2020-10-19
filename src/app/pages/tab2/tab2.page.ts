@@ -36,7 +36,8 @@ export class Tab2Page implements OnInit {
     console.log( 'Enviando Correo' );
   }
 
-  abrirRegistros(){
-    console.log( 'Abrir registro')
+  abrirRegistros( registro ){
+    console.log( 'Abrir registro');
+    this.datalocal.abrirregistro( registro );
   }
 }

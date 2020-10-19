@@ -33,7 +33,7 @@ export class Tab1Page implements OnInit {
     // console.log('ViewWillEnter');
     this.scan();
   }
-  /* 
+  /*
   ionViewWillLeave(){
     console.log('ViewWillLeave');
   }
