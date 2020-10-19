@@ -37,7 +37,7 @@ export class DatalocalService {
   }
 
   abrirregistro(registro: Registro){
-      this.navctrl.navigateForward('/tabs/history');
+      this.navctrl.navigateForward('/menu-tabs/tabs/history');
 
       switch ( registro.type ){
         case 'http':

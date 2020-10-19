@@ -50,6 +50,7 @@ export class Tab1Page implements OnInit {
      }).catch(err => {
          console.log('Error', err);
          this.datalocal.guardarRegistro( 'QRcode', 'https://github.com/franck2699/Walking-Care-Dogs' );
+      //   this.datalocal.guardarRegistro( 'QRcode', 'geo:40.73151796986687,-74.06087294062502' );
      });
   }
 
