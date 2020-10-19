@@ -10,11 +10,17 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 
 import { BarcodeScanner } from '@ionic-native/barcode-scanner/ngx';
+import { IonicStorageModule } from '@ionic/storage';
 
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
+  imports: [BrowserModule,
+     IonicModule.forRoot(),
+     AppRoutingModule,
+     IonicStorageModule.forRoot({ name: 'data',
+     driverOrder: ['indexeddb', 'sqlite', 'websql']
+         })],
   providers: [
     StatusBar,
     SplashScreen,

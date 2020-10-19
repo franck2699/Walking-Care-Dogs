@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DatalocalService } from '../../services/datalocal.service';
 
 @Component({
   selector: 'app-tab2',
@@ -7,11 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Tab2Page implements OnInit {
 
-  constructor() { }
+
+  constructor( public datalocal: DatalocalService ) { }
 
   ngOnInit() {
   }
-  ionViewDidEnter(){
+ /* ionViewDidEnter(){
     console.log('ViewDidEnter');
   }
   ionViewDidLeave(){
@@ -28,5 +30,13 @@ export class Tab2Page implements OnInit {
   }
   ionViewWillUnload(){
     console.log('viewWillUnload');
+  }
+*/
+  enviarCorreo(){
+    console.log( 'Enviando Correo' );
+  }
+
+  abrirRegistros(){
+    console.log( 'Abrir registro')
   }
 }

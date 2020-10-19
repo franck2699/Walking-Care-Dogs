@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { BarcodeScanner } from '@ionic-native/barcode-scanner/ngx';
+import { DatalocalService } from '../../services/datalocal.service';
 
 @Component({
   selector: 'app-tab1',
@@ -13,11 +14,12 @@ export class Tab1Page implements OnInit {
     allowSlidePrev: false,
     allowSlideNext: false
   };
-  constructor(private barcodeScanner: BarcodeScanner) { }
+  constructor(private barcodeScanner: BarcodeScanner,
+              private datalocal: DatalocalService) { }
 
   ngOnInit() {
   }
-
+/*
   ionViewDidEnter(){
     console.log('ViewDidEnter');
   }
@@ -26,23 +28,28 @@ export class Tab1Page implements OnInit {
   }
   ionViewDidLoad(){
     console.log('ViewDidLoad');
-  }
+  }*/
   ionViewWillEnter(){
-    console.log('ViewWillEnter');
-    this.scan(); 
+    // console.log('ViewWillEnter');
+    this.scan();
   }
+  /* 
   ionViewWillLeave(){
     console.log('ViewWillLeave');
   }
   ionViewWillUnload(){
     console.log('viewWillUnload');
   }
-
+*/
   scan(){
     this.barcodeScanner.scan().then(barcodeData => {
       console.log('Barcode data', barcodeData);
+      if ( !barcodeData.cancelled ){
+          this.datalocal.guardarRegistro( barcodeData.format, barcodeData.text );
+      }
      }).catch(err => {
          console.log('Error', err);
+         this.datalocal.guardarRegistro( 'QRcode', 'https://github.com/franck2699/Walking-Care-Dogs' );
      });
   }
 
