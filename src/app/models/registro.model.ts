@@ -16,7 +16,7 @@ export class Registro {
     }
 
     private determinarType(){
-        
+
         const iniciarTexto = this.text.substr(0, 4);
         console.log('Tipo', iniciarTexto);
 
@@ -28,7 +28,7 @@ export class Registro {
 
             case 'geo:':
                 this.type = 'geo';
-                this.icon = 'pin';
+                this.icon = 'map';
                 break;
 
             default:

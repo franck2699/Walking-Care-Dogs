@@ -74,14 +74,6 @@ const routes: Routes = [
   {
     path: 'menu-tabs',
     loadChildren: () => import('./pages/menu-tabs/menu-tabs.module').then( m => m.MenuTabsPageModule)
-  },
-  {
-    path: 'tab1',
-    loadChildren: () => import('./pages/tab1/tab1.module').then( m => m.Tab1PageModule)
-  },
-  {
-    path: 'tab2',
-    loadChildren: () => import('./pages/tab2/tab2.module').then( m => m.Tab2PageModule)
   }
 ];
 

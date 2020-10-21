@@ -7,8 +7,7 @@ import { DatalocalService } from '../../services/datalocal.service';
   styleUrls: ['./tab2.page.scss'],
 })
 export class Tab2Page implements OnInit {
-
-
+  
   constructor( public datalocal: DatalocalService ) { }
 
   ngOnInit() {
