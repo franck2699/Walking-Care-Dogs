@@ -5,7 +5,7 @@ export class Registro {
     public type: string;
     public icon: string;
     public created: Date;
-    
+
     constructor(formato: string, text: string ){
         this.formato = formato;
         this.text = text;
@@ -20,7 +20,7 @@ export class Registro {
         const iniciarTexto = this.text.substr(0, 4);
         console.log('Tipo', iniciarTexto);
 
-        switch( iniciarTexto ){
+        switch ( iniciarTexto ){
             case 'http':
                 this.type = 'http';
                 this.icon = 'globe';
