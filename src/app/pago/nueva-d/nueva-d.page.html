@@ -1,0 +1,85 @@
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <ion-header>
+        <ion-toolbar color="primary" style=" color: white;">
+          <ion-buttons slot="start">
+            <ion-menu-button name="Menu">
+            </ion-menu-button>
+                </ion-buttons>
+                <ion-title>
+                  Nueva tarjeta de Debito
+                </ion-title>
+              </ion-toolbar>
+            </ion-header>
+                
+            <ion-app>
+              <ion-header translucent>
+                <ion-toolbar>
+                  <ion-title>Pensada para los amantes de las mascotas</ion-title>
+                  
+                </ion-toolbar>
+              </ion-header>
+              <ion-content fullscreen>
+                 <div class="wrap">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 d-flex justify-content-md-end">
+					</div>
+				</div>
+			</div>
+    </div>
+<ion-content>
+<ion-card >
+  <ion-list lines="full" class="ion-no-margin ion-no-padding">
+							<ion-item>
+                  <ion-label position="floating">Numero de Tarjeta</ion-label>
+								<ion-input type="number"></ion-input>
+							</ion-item>
+				  
+							<ion-item>
+								<ion-label position="floating">Nombre y Apellido</ion-label>
+								<ion-input type="text"></ion-input>
+              </ion-item>
+							<ion-item>
+							  <ion-label position="floating">CSV</ion-label>
+							  <ion-input type="number" min="000" max="999"></ion-input>
+							</ion-item>
+
+							<ion-item>
+								<ion-label>Fecha de Expiración</ion-label>
+								<ion-datetime value="2020-07" max="2070"
+								  displayFormat="MM, YY"
+								  monthShortNames="Ene, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dic"></ion-datetime>
+                </ion-item>
+  </ion-list>
+</ion-card>
+<ion-button shape="round" fill="outline">Continuar</ion-button>
+</ion-content>
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+        <h2 class="footer-heading">Contactate con Nosotros</h2>
+        <div class="block-23 mb-3">
+          <ul>
+            <li><span class="icon fa fa-map"></span><span class="text">Tula de Allende Hidalgo México</span></li>
+            <li><a href="#"><span class="icon fa fa-phone"></span><span class="text">+52 773 392 1210</span></a></li>
+            <li><a href="#"><span class="icon fa fa-paper-plane"></span><span class="text">admin@walkingcare.com</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-5">
+      <div class="col-md-12 text-center">
+
+        <p class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+      </div>
+    </div>
+  </div>
+</footer>
+          </ion-content>
+        </ion-app>

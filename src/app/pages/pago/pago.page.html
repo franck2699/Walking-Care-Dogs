@@ -29,7 +29,6 @@
 				</div>
 			</div>
     </div>
-
     <section class="ftco-section ftco-no-pt ftco-no-pb">
     	<div class="container">
     		<div class="row d-flex no-gutters">
@@ -41,57 +40,34 @@
     				<div class="heading-section pt-md-5">
 	            <h2 class="mb-4">Pago de Servicio</h2>
     				</div>
-					<ion-list>
-						<ion-radio-group value="biff">
+					<ion-list >
+						<ion-radio-group [(ngModel)]="pag">
 						  <ion-list-header>
 							<h2 class="mb-4">Tipo de Pago</h2>
 						  </ion-list-header>
-					  
 						  <ion-item>
-							<ion-label>OXXO</ion-label>
-							<ion-radio slot="start"></ion-radio>
+							<ion-icon name="card-outline"></ion-icon> <ion-label >Nueva Tarjeta de Credito</ion-label>
+							<ion-radio value="nueva" slot="start" ></ion-radio>
 						  </ion-item>
-
-						  <ion-button expand="block" class="ion-no-margin" routerLink="/pago">Imprimir Comprobante</ion-button>
-					  
 						  <ion-item>
-							<ion-label>Visa</ion-label>
-							<ion-radio slot="start"></ion-radio>
+							<ion-icon name="card"></ion-icon> <ion-label>Nueva Tarjeta de Dedito</ion-label>
+							<ion-radio value="nueva-d" slot="start"></ion-radio>
 						  </ion-item>
-
-						  <ion-list lines="full" class="ion-no-margin ion-no-padding">
-							<ion-item>
-								<ion-label>Número de Tarjeta</ion-label>
-								<ion-input type="number"></ion-input>
-							</ion-item>
-				  
-							<ion-item>
-								<ion-label>Nombre de Tarjeta</ion-label>
-								<ion-input type="text"></ion-input>
-							</ion-item>
-							
-							<ion-item>
-							  <ion-label position="floating">CSV</ion-label>
-							  <ion-input type="text"></ion-input>
-							</ion-item>
-
-							<ion-item>
-								<ion-label>Fecha de Expiración</ion-label>
-								<ion-datetime value="2020-07" max="2070"
-								  displayFormat="MMM, YYYY"
-								  monthShortNames="Ene, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dic"></ion-datetime>
-							  </ion-item>
-		  <br><br>
-							 <ion-button expand="block" class="ion-no-margin" routerLink="/pago">Pagar</ion-button>
-						  </ion-list>
-					  
 						  <ion-item>
-							<ion-label>Paypal</ion-label>
-							<ion-radio slot="start" value="buford"></ion-radio>
+							<ion-icon name="cash-outline"></ion-icon> <ion-label>Efectivo en Puntos de Pago</ion-label>
+							<ion-radio value="efectivo" slot="start"></ion-radio>
+						  </ion-item>
+						  <ion-item>
+							<ion-icon name="logo-paypal" ></ion-icon> <ion-label>Paypal</ion-label>
+							<ion-radio value="paypal" slot="start"></ion-radio>
 						  </ion-item>
 						</ion-radio-group>
-
-					  </ion-list>
+					</ion-list>
+						  <ion-content>
+							 <ion-button (click)="btnclick()" expand="block" class="ion-no-margin">Continuar</ion-button>
+						  </ion-content>
+						
+					  
 	        </div>
         </div>
     	</div>

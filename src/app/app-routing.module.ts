@@ -74,7 +74,23 @@ const routes: Routes = [
   {
     path: 'menu-tabs',
     loadChildren: () => import('./pages/menu-tabs/menu-tabs.module').then( m => m.MenuTabsPageModule)
+  },  {
+    path: 'nueva',
+    loadChildren: () => import('./pago/nueva/nueva.module').then( m => m.NuevaPageModule)
+  },
+  {
+    path: 'paypal',
+    loadChildren: () => import('./pago/paypal/paypal.module').then( m => m.PaypalPageModule)
+  },
+  {
+    path: 'efectivo',
+    loadChildren: () => import('./pago/efectivo/efectivo.module').then( m => m.EfectivoPageModule)
+  },
+  {
+    path: 'nueva-d',
+    loadChildren: () => import('./pago/nueva-d/nueva-d.module').then( m => m.NuevaDPageModule)
   }
+
 ];
 
 @NgModule({

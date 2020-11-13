@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import{Router} from '@angular/router';
 
 @Component({
   selector: 'app-pago',
@@ -6,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./pago.page.scss'],
 })
 export class PagoPage implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
+pag;
+  constructor(public router:Router) { }
+  
+  btnclick() {
+    this. router.navigateByUrl('/'+this.pag);
   }
+  ngOnInit() {
+  }  
 
 }
